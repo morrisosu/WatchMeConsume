@@ -1,11 +1,11 @@
 ﻿/*----------------------------------------------------------
-The base color for this template is #5c87b2. If you'd like
+The base color for this template is #e0e0e0. If you'd like
 to use a different color start by replacing all instances of
-#5c87b2 with your new color.
+#e0e0e0 with your new color.
 ----------------------------------------------------------*/
 body
 {
-    background-color: #5c87b2;
+    background-color: #e0e0e0;
     font-size: 75%;
     font-family: Verdana, Tahoma, Arial, "Helvetica Neue", Helvetica, Sans-Serif;
     margin: 0;
@@ -129,7 +129,7 @@ page width. Or, you can specify an exact pixel width. */
 ----------------------------------------------------------*/
 ul#menu
 {
-    border-bottom: 1px #5C87B2 solid;
+    border-bottom: 1px #e0e0e0 solid;
     padding: 0 0 2px;
     position: relative;
     margin: 0;
