@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatchMeConsume", "WatchMeConsume\WatchMeConsume.csproj", "{4EF25885-204D-45AC-8CA4-81C31BC3F174}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatchMeConsume.Tests", "WatchMeConsume.Tests\WatchMeConsume.Tests.csproj", "{E66057CE-1AC4-44FD-8821-3089C4AA837D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EF25885-204D-45AC-8CA4-81C31BC3F174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EF25885-204D-45AC-8CA4-81C31BC3F174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EF25885-204D-45AC-8CA4-81C31BC3F174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EF25885-204D-45AC-8CA4-81C31BC3F174}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E66057CE-1AC4-44FD-8821-3089C4AA837D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E66057CE-1AC4-44FD-8821-3089C4AA837D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E66057CE-1AC4-44FD-8821-3089C4AA837D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E66057CE-1AC4-44FD-8821-3089C4AA837D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
