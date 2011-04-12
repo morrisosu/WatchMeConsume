@@ -5,9 +5,9 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WatchMeConsume;
 using WatchMeConsume.Controllers;
-using WatchMeConsume.Models;
+using WatchMeConsume.Interfaces;
+using WatchMeConsume.ViewModels;
 
 namespace WatchMeConsume.Tests.Controllers
 {
@@ -35,7 +35,7 @@ namespace WatchMeConsume.Tests.Controllers
         {
             // Arrange
             AccountController controller = GetAccountController();
-            ChangePasswordModel model = new ChangePasswordModel()
+            ChangePasswordViewModel model = new ChangePasswordViewModel()
             {
                 OldPassword = "goodOldPassword",
                 NewPassword = "goodNewPassword",
@@ -56,7 +56,7 @@ namespace WatchMeConsume.Tests.Controllers
         {
             // Arrange
             AccountController controller = GetAccountController();
-            ChangePasswordModel model = new ChangePasswordModel()
+            ChangePasswordViewModel model = new ChangePasswordViewModel()
             {
                 OldPassword = "goodOldPassword",
                 NewPassword = "badNewPassword",
@@ -79,7 +79,7 @@ namespace WatchMeConsume.Tests.Controllers
         {
             // Arrange
             AccountController controller = GetAccountController();
-            ChangePasswordModel model = new ChangePasswordModel()
+            ChangePasswordViewModel model = new ChangePasswordViewModel()
             {
                 OldPassword = "goodOldPassword",
                 NewPassword = "goodNewPassword",
@@ -145,9 +145,9 @@ namespace WatchMeConsume.Tests.Controllers
         {
             // Arrange
             AccountController controller = GetAccountController();
-            LogOnModel model = new LogOnModel()
+            LogOnViewModel model = new LogOnViewModel()
             {
-                UserName = "someUser",
+                EmailAddress = "someUser",
                 Password = "goodPassword",
                 RememberMe = false
             };
@@ -168,9 +168,9 @@ namespace WatchMeConsume.Tests.Controllers
         {
             // Arrange
             AccountController controller = GetAccountController();
-            LogOnModel model = new LogOnModel()
+            LogOnViewModel model = new LogOnViewModel()
             {
-                UserName = "someUser",
+                EmailAddress = "someUser",
                 Password = "goodPassword",
                 RememberMe = false
             };
@@ -190,9 +190,9 @@ namespace WatchMeConsume.Tests.Controllers
         {
             // Arrange
             AccountController controller = GetAccountController();
-            LogOnModel model = new LogOnModel()
+            LogOnViewModel model = new LogOnViewModel()
             {
-                UserName = "someUser",
+                EmailAddress = "someUser",
                 Password = "goodPassword",
                 RememberMe = false
             };
@@ -213,9 +213,9 @@ namespace WatchMeConsume.Tests.Controllers
         {
             // Arrange
             AccountController controller = GetAccountController();
-            LogOnModel model = new LogOnModel()
+            LogOnViewModel model = new LogOnViewModel()
             {
-                UserName = "someUser",
+                EmailAddress = "someUser",
                 Password = "goodPassword",
                 RememberMe = false
             };
@@ -235,9 +235,9 @@ namespace WatchMeConsume.Tests.Controllers
         {
             // Arrange
             AccountController controller = GetAccountController();
-            LogOnModel model = new LogOnModel()
+            LogOnViewModel model = new LogOnViewModel()
             {
-                UserName = "someUser",
+                EmailAddress = "someUser",
                 Password = "badPassword",
                 RememberMe = false
             };
@@ -271,10 +271,9 @@ namespace WatchMeConsume.Tests.Controllers
         {
             // Arrange
             AccountController controller = GetAccountController();
-            RegisterModel model = new RegisterModel()
+            RegisterViewModel model = new RegisterViewModel()
             {
-                UserName = "someUser",
-                Email = "goodEmail",
+                EmailAddress = "goodEmail",
                 Password = "goodPassword",
                 ConfirmPassword = "goodPassword"
             };
@@ -294,10 +293,9 @@ namespace WatchMeConsume.Tests.Controllers
         {
             // Arrange
             AccountController controller = GetAccountController();
-            RegisterModel model = new RegisterModel()
+            RegisterViewModel model = new RegisterViewModel()
             {
-                UserName = "duplicateUser",
-                Email = "goodEmail",
+                EmailAddress = "goodEmail",
                 Password = "goodPassword",
                 ConfirmPassword = "goodPassword"
             };
@@ -318,10 +316,9 @@ namespace WatchMeConsume.Tests.Controllers
         {
             // Arrange
             AccountController controller = GetAccountController();
-            RegisterModel model = new RegisterModel()
+            RegisterViewModel model = new RegisterViewModel()
             {
-                UserName = "someUser",
-                Email = "goodEmail",
+                EmailAddress = "goodEmail",
                 Password = "goodPassword",
                 ConfirmPassword = "goodPassword"
             };

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
-using WatchMeConsume.Models;
+using WatchMeConsume.Attributes;
 
 namespace WatchMeConsume.ViewModels
 {
